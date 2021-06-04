@@ -1,0 +1,28 @@
+.header-btn {
+    width: 156px;
+    height: 48px;
+    color: $lightColor;
+    border: 2px solid #18E8A4;
+    border-radius: 30px;
+    background: #020213;
+    margin-top: 50px;
+
+    @media (min-width: 1024px) {
+        margin-top: unset;
+        margin-left: 130px;
+    }
+    @media (min-width: 1280px) {
+        margin-left: 291px;
+    }
+
+}
+
+.btn {
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 1.2;
+    color: $darkColor;
+    background: $primaryColor;
+    border-radius: 10px;
+    box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09), 0px 4px 2px rgba(0, 0, 0, 0.09), 0px 2px 1px rgba(0, 0, 0, 0.09);
+}

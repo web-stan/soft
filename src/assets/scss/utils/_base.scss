@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $mainFontColor;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+  background: #FFFFFF;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+button {
+  font-family: $mainFont;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: 1024px) {
+    max-width: 1440px;
+    padding: 0 90px;
+  }
+}
+
+.container_mod {
+  padding: 0;
+}
+
+.second-title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: .9;
+  color: $darkColor;
+  letter-spacing: -1px;
+
+  @media (min-width: 1280px) {
+    font-size: 62px;
+}
+}

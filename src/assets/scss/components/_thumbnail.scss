@@ -1,0 +1,131 @@
+.thumbnail {
+
+    $r: &;
+
+    &__wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        overflow: hidden;
+
+        @media (min-width: 1600px) {
+            max-width: 1920px;
+        }
+    }
+
+    &__inner {
+        width: 1440px;
+
+        @media (min-width: 1600px) {
+            width: 1920px;
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+
+        &:nth-child(2n - 1) {
+            margin-left: -37px;
+        }
+
+        @media (min-width: 576px) {
+
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:nth-child(2n - 1) {
+                margin-left: -81px;
+            }
+
+            &:nth-child(3n - 1) {
+                margin-left: -23px;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            &:nth-child(2n - 1) {
+                margin-left: -205px;
+            }
+
+            &:nth-child(3n - 1) {
+                margin-left: -88px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            &:nth-child(2n - 1) {
+                margin-left: -364px;
+            }
+
+            &:nth-child(3n - 1) {
+                margin-left: -246px;
+            }
+        }
+    }
+
+    &__box-img {
+        position: relative;
+        width: 119.1px;
+        height: 66.8px;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-left: 6px;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            #{$r}__mask {
+                background-color: $primaryColor;
+                opacity: .9;
+            }
+        }
+
+        @media (min-width: 576px) {
+            width: 188.68px;
+            height: 105.82px;
+            margin-left: 10px;
+        }
+
+        @media (min-width: 1024px) {
+            width: 378px;
+            height: 212px;
+            margin-left: 20px;
+        }
+    }
+
+    &__mask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: transparent;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    &__text {
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 1.2;
+        color: $darkColor;
+    }
+
+}

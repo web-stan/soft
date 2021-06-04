@@ -1,0 +1,114 @@
+.general {
+    background: #020213;
+
+    &__info {
+        margin-bottom: 42px;
+        color: $lightColor;
+
+        @media (min-width: 576px) {
+            margin-bottom: 19px;
+        }
+
+        @media (min-width: 1024px) {
+            display: flex;
+            margin-bottom: 77px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 1.11;
+        letter-spacing: -1px;
+
+        span {
+            color: $primaryColor;
+            letter-spacing: -1px;
+        }
+
+        @media (min-width: 576px) {
+            margin-bottom: 24px;
+            font-size: 56px;
+        }
+
+        @media (min-width: 1024px) {
+            margin-right: 50px;
+            margin-top: -6px;
+            flex-basis: 430px;
+            flex-shrink: 0;
+        }
+    }
+
+    &__text {
+        line-height: 1.59;
+        padding-right: 5px;
+
+
+        @media (min-width: 576px) {
+            max-width: 575px;
+        }
+
+        @media (min-width: 1024px) {
+            max-width: unset;
+            font-size: 24px;
+            flex-basis: 580px;
+        }
+    }
+
+    &__bottom {
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        padding: 42px 0 63px;
+        text-align: center;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -70px;
+            display: block;
+            height: 70px;
+            width: 100%;
+            background: linear-gradient(180deg, rgba(2, 2, 19, 0) 0%, #020213 100%);
+            pointer-events: none;
+
+            @media (min-width: 576px) {
+                height: 115px;
+                top: -115px;
+            }
+
+            @media (min-width: 1024px) {
+                height: 212px;
+                top: -212px;
+            }
+        }
+
+        @media (min-width: 576px) {
+            padding: 8px 0 63px;
+            text-align: left;
+        }
+
+        @media (min-width: 1024px) {
+            padding: 0;
+            height: 194px;
+        }
+
+        @media (min-width: 1600px) {
+            max-width: 1920px;
+        }
+    }
+
+    &__button {
+        width: 172px;
+        height: 40px;
+
+        @media (min-width: 576px) {
+            margin-left: 74px;
+        }
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+}

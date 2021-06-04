@@ -1,0 +1,198 @@
+.card {
+    height: 608px;
+    display: flex;
+    position: relative;
+    padding: 0 5px 94px;
+
+    &_hide {
+        @media (min-width: 1440px) {
+            display: none;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        height: 555px;
+        padding: 0 10px 98px;
+    }
+
+    &__inner {
+        flex: 1;
+        padding: 32px 24px 30px;
+        background-color: #ffffff;
+        box-shadow: 0px 32px 16px rgba(0, 0, 0, 0.09),
+            0px 16px 8px rgba(0, 0, 0, 0.09),
+            0px 8px 4px rgba(0, 0, 0, 0.09),
+            0px 4px 2px rgba(0, 0, 0, 0.09),
+            0px 2px 1px rgba(0, 0, 0, 0.09);
+        border-radius: 16px;
+
+        @media (min-width: 576px) {
+            padding: 33px 20px 30px;
+        }
+
+        @media (min-width: 1440px) {
+            padding: 55px 24px 24px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 17px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        color: $darkColor;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 1.1;
+        // letter-spacing: -1px;
+        letter-spacing: -1.6px;
+
+        @media (min-width: 1440px) {
+            width: 255px;
+            margin-bottom: 16px;
+            font-size: 36px;
+        }
+    }
+
+    &__text {
+        // color: $secondColor;
+        line-height: 25px;
+    }
+
+    &__box {
+        @media (min-width: 1440px) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__text_mod {
+
+        @media (min-width: 1440px) {
+            flex-basis: 300px;
+        }
+    }
+
+    &__text_hidden {
+        display: none;
+
+        @media (min-width: 1440px) {
+            display: block;
+            flex-basis: 248px;
+        }
+    }
+
+    &_first {
+        .card__inner {
+          background:
+            url("data:image/svg+xml,%3Csvg width='96' height='186' viewBox='0 0 96 186' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M95.878 0.879997H55.058C47.778 32.86 28.798 41.96 4.35805 43.52L0.198047 43.78V78.36H43.878V186H95.878V0.879997Z' fill='%23EFDCFB'/%3E%3C/svg%3E%0A"),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(117.15deg, #1BD1FC 0%, #316DD1 100%);
+          background-repeat: no-repeat;
+          background-position: 48% 292px,0 0;
+      
+          @media (min-width: 576px) {
+            background-position: 48% 297px,0 0;
+          }
+      
+      
+          @media (min-width: 1440px) {
+            background-image: url("data:image/svg+xml,%3Csvg width='126' height='243' viewBox='0 0 126 243' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M125.838 0.919996H72.458C62.938 42.74 38.118 54.64 6.15797 56.68L0.717969 57.02V102.24H57.838V243H125.838V0.919996Z' fill='%23EFDCFB'/%3E%3C/svg%3E%0A"),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(117.15deg, #1BD1FC 0%, #316DD1 100%);
+            background-position: 90% 167px,0 0;
+          }
+        }
+
+        .card__text {
+            color: $thirdColor;
+        }
+      }
+
+      &_second {
+        .card__inner {
+          background-image: url("data:image/svg+xml,%3Csvg width='218' height='245' viewBox='0 0 218 245' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M59.3718 202.62C60.6718 193.26 66.6518 189.62 79.1318 184.42L92.9118 178.7C128.792 163.88 150.372 148.54 150.372 111.88C150.372 80.16 124.892 55.72 78.0918 55.72C24.7918 55.72 3.4718 84.84 3.7318 124.1H53.1318C53.1318 106.42 60.4118 98.1 76.7918 98.1C90.8318 98.1 98.8918 104.34 98.8918 117.34C98.8918 129.3 92.1318 136.06 72.8918 142.82L61.7118 146.72C8.1518 165.44 3.4718 199.76 1.9118 226.28L0.871797 245H151.412V202.62H59.3718ZM217.902 0.339988H193.202C187.482 18.54 173.962 20.36 163.562 20.36V42.2H186.442V107.72H217.902V0.339988Z' fill='%23CFECFA'/%3E%3C/svg%3E%0A"),
+          linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(117.15deg, #1BD1FC 0%, #316DD1 100%);
+          background-repeat: no-repeat;
+          background-position: 48% 232px,0 0;
+      
+          @media (min-width: 576px) {
+            background-position: 50% 238px,0 0;
+          }
+      
+          @media (min-width: 1440px) {
+            background-image: url("data:image/svg+xml,%3Csvg width='197' height='248' viewBox='0 0 197 248' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M76.5434 192.58C78.2434 180.34 86.0634 175.58 102.383 168.78L120.403 161.3C167.323 141.92 195.543 121.86 195.543 73.92C195.543 32.44 162.223 0.479985 101.023 0.479985C31.3234 0.479985 3.44344 38.56 3.78344 89.9H68.3834C68.3834 66.78 77.9034 55.9 99.3234 55.9C117.683 55.9 128.223 64.06 128.223 81.06C128.223 96.7 119.383 105.54 94.2234 114.38L79.6034 119.48C9.56344 143.96 3.44344 188.84 1.40344 223.52L0.0434378 248H196.903V192.58H76.5434Z' fill='%23CFECFA'/%3E%3C/svg%3E%0A"),
+            linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(117.15deg, #1BD1FC 0%, #316DD1 100%);
+            background-position: 90% 160px,0 0;
+          }
+        }
+      }
+
+    &__timeline {
+        flex: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 167px;
+        background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='1000' height='167' overflow='visible'%3E%3Cpath opacity='.1' d='M994 154.8H661.9c0 .1 0 .1.1.2H549c-9.9 0-18-8.1-18-18V30c0-16.2-13-29.5-29.1-30-.7 0-1.4 0-2 .1-.6 0-1.3-.1-1.9-.1-16.1.5-29 13.8-29 30v107c0 9.9-8.1 18-18 18h-84v-.2H6c-3.3 0-6 2.7-6 6s2.7 6 6 6h21.4c0 .1-.1.1-.1.2H451c9.8 0 18.5-4.7 24-12 3.8-5 6-11.3 6-18V30c0-9.6 7.5-17.4 17-18h3.9c9.5.5 17.1 8.4 17.1 18v107c0 6.8 2.2 13 6 18 5.5 7.3 14.2 12 24 12h420.4c0-.1-.1-.1-.1-.2H994c3.3 0 6-2.7 6-6s-2.7-6-6-6zM476.8 122c0 1.1-.9 2-2 2s-2-.9-2-2V82c0-.5.2-.9.5-1.3l.1-.1c.1-.1.2-.2.3-.2h.1c.1-.1.2-.1.3-.1.1 0 .2-.1.3-.1h.8c.1 0 .2.1.3.1.1 0 .2.1.3.2 0 0 .1 0 .1.1l.2.2.1.1c.3.4.5.8.5 1.3V122z'/%3E%3Cpath fill='%23484A4A' d='M488.2 95.4c-.4.4-.9.6-1.4.6-.5 0-1-.2-1.4-.6l-3-3L481 91l-.2-.2-1.2-1.2-2.8-2.8V122c0 1.1-.9 2-2 2s-2-.9-2-2V86.8l-.8.8-2.8 2.8-2.8 2.8-2.2 2.2c-.8.8-2.1.8-2.8 0-.8-.8-.8-2 0-2.8l2.2-2.2 2.8-2.8 2.4-2.4.2-.2 3-3 1.2-1.2.1-.1c.1-.1.2-.2.3-.2h.1c.1-.1.2-.1.3-.1.1 0 .2-.1.3-.1h.8c.1 0 .2.1.3.1.1 0 .2.1.3.2 0 0 .1 0 .1.1l.2.2.1.1 4.5 4.5.2.2 1.4 1.4 2.8 2.8 3 3c1 .4 1 1.7.2 2.5zM538.2 87.4l-3 3-2.8 2.8-6.1 6.1-.1.1-.2.2s-.1 0-.1.1c-.1.1-.2.1-.3.2h-.1c-.1 0-.2.1-.3.1h-.8c-.1 0-.2 0-.3-.1-.1 0-.2 0-.2-.1-.1 0-.1-.1-.2-.1h-.1c-.1-.1-.2-.2-.3-.2l-.1-.1L522 98l-3-3-.2-.2-2.4-2.4-2.8-2.8-2.2-2.2c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l2.2 2.2 2.4 2.4.4.4 2.8 2.8.8.8V58c0-1.1.9-2 2-2s2 .9 2 2v35.2l2.8-2.8 1.2-1.2.2-.2 1.4-1.4 3-3c.8-.8 2-.8 2.8 0 .8.7.8 2 0 2.8z'/%3E%3C/svg%3E%0A");
+        background-size: auto 100%;
+        background-position: 50% 0;
+        z-index: 1;
+
+        @media (min-width: 1440px) {
+            background-position: 6% 0;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -8px;
+            width: 51px;
+            height: 28px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51px' height='28px' viewBox='0 0 51 28' overflow='visible'%3E%3Cpath fill='%23484A4A' d='M51 14v.4c0 .1-.1.2-.1.3 0 .1-.1.2-.2.3l-.3.3-12 12c-.4.5-.9.7-1.4.7s-1-.2-1.4-.6c-.8-.8-.8-2 0-2.8l8.6-8.6H2c-1.1 0-2-.9-2-2s.9-2 2-2h42.2l-8.6-8.6c-.8-.8-.8-2 0-2.8.8-.8 2-.8 2.8 0l11.9 11.9.1.1.3.3c.1.1.1.2.2.3 0 .1.1.2.1.3v.5z'/%3E%3C/svg%3E%0A");
+        }
+
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            left: 100%;
+            transform: translatex(-35%)
+        }
+    }
+
+    &.first .card__timeline::before {
+        display: block;
+        left: 0;
+        transform: translatex(-85%)
+    }
+
+    &__tail {
+        display: none;
+        position: absolute;
+        width: 70px;
+        height: inherit;
+        bottom: inherit;
+        background: inherit;
+    }
+
+
+    &.first .card__tail {
+        display: block;
+        right: 100%;
+        background-position: 0 0;
+    }
+
+    &.last .card__tail {
+        display: block;
+        left: 100%;
+        background-position: 100% 0;
+    }
+}
